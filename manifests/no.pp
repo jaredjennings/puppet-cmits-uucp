@@ -35,6 +35,6 @@ class uucp::no {
                 ensure => stopped,
             }
         }
-        default: { unimplemented() }
+        default: { fail "unimplemented on ${::osfamily}" }
     }
 }
